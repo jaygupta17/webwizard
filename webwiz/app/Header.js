@@ -21,6 +21,11 @@ function Header() {
                         Contact
                     </Link>
                 </li>        
+                <li className="font-semibold relative w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-red-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">
+                    <Link href="/support">
+                        Support
+                    </Link>
+                </li>        
              
             </ul>
             <div className="md:w-[15%] h-[50%] flex justify-center items-center sm:w-full">
