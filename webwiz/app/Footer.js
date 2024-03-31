@@ -3,7 +3,7 @@ import linkedin from "../public/linkedin.svg";
 import github from "../public/gtihub.svg";
 import twitter from "../public/twitter.svg";
 import insta from "../public/insta.svg";
-import bottomBg from "../public/bottom_bg.svg";
+import bottomBg from "../public/bottomBg.png";
 
 export default function Footer() {
   return (
@@ -25,18 +25,35 @@ export default function Footer() {
           <Image src={insta} alt="insta_logo" height={30} width={30} />
         </div>
       </div>
-      <div className="mr-[14%] mt-8">
-        <ul className="w-[35%] text-white text-[20px] flex items-center sm:text-2 gap-x-10">
-          <li className="font-semibold relative w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-red-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">
+      <div className="mr-[14%]">
+        <div className="w-[35%] text-white text-[20px] flex items-center sm:text-2 gap-x-10 mt-3">
+          <div className="font-semibold relative w-fit block">
             About
-          </li>
-          <li className="font-semibold relative w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-red-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">
+              <ul className="text-[18px] font-extralight">
+                <li className="">Our Staff</li>
+                <li>Brand Kit</li>
+                <li>Spellbooks</li>
+                <li>TImeline</li>
+            </ul>
+          </div>
+          <div className="font-semibold relative block w-[70%]">
             Services
-          </li>
-          <li className="font-semibold relative w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-red-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">
+            <ul className="text-[16.3px] font-extralight mt-2.5">
+                <li>Sign In/Out</li>
+                <li>Text-to-Image</li>
+                <li>Brewery</li>
+            </ul>
+          </div>
+          <div className="font-semibold relative w-fit block">
             Other
-          </li>
-        </ul>
+            <ul className="text-[17.5px] font-extralight">
+                <li>Our Staff</li>
+                <li>Brand Kit</li>
+                <li>Spellbooks</li>
+                <li>TImeline</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   );

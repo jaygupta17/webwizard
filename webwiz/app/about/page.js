@@ -5,17 +5,17 @@ function About() {
     {
       name: "Jay Gupta",
       branch: "Data Science",
-      skills: ["Reactjs", "Tailwind CSS", "Appwrite", "Figma"],
+      skills: ["NextJs", "Tailwind CSS", "Appwrite", "Figma"],
     },
     {
-      name: "Jay Gupta",
+      name: "Krishna Vijaywargiy",
       branch: "Data Science",
-      skills: ["Reactjs", "Tailwind CSS", "Appwrite", "Figma"],
+      skills: ["NextJs", "Tailwind CSS","Figma"],
     },
     {
-      name: "Jay Gupta",
-      branch: "Data Science",
-      skills: ["Reactjs", "Tailwind CSS", "Appwrite", "Figma"],
+      name: "Om Chillure",
+      branch: "ENCS",
+      skills: [ "ML", "Gen AI" ,"NextJs", "Tailwind CSS"],
     },
   ];
   const stack = ["Next.js", "Appwrite", "Python"];
