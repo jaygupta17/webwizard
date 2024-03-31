@@ -3,7 +3,7 @@ import Spline from '@splinetool/react-spline';
 export default function mid() {
     return (
         <>
-        <div className='w-[90%] h-[50%] flex gap-[40px] mt-16 mx-auto ml-[13%]'>
+        <div className='w-[90%] h-[50%] flex gap-[40px] mt-16'>
             <div className='mt-20 w-[80%]'>
                 <h2 className='text-white text-[35px]'>The Wizards Home</h2>
                 <p className='text-white'>Lörem ipsum mer ultrask hyposk, miska än tranerade. Diling monohönera pora bebinera, pack. Dinat teling. Berån pott. Benade pres yn.
