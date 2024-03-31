@@ -4,7 +4,8 @@ import Image from "next/image";
 
 function Header() {
   return (
-        <div className="bg-black md:h-[10vh] w-full flex justify-between items-center min-[200px]:h-[20vh] min-[200px]:flex-col min-[700px]:flex-row">
+    <div className="h-[13vh] w-full flex justify-center items-center">
+        <div className="bg-white/10 md:h-[10vh] w-[98%] rounded-[20px] flex justify-between items-center min-[200px]:h-[20vh] min-[200px]:flex-col min-[700px]:flex-row">
             <div className="ml-32 rounded-md">
                 <Image src={logo} alt="logo" width={65} height={65}/>
             </div>
@@ -35,6 +36,7 @@ function Header() {
                 <button className="bg-red-500 rounded-md w-[50%] h-full text-white font-mono font-semibold flex justify-center items-center hover:bg-red-600">Log in</button>
             </div>
         </div>
+    </div>
   )
 }
 
