@@ -33,7 +33,7 @@ function Header() {
              
             </ul>
             <div className="md:w-[15%] h-[50%] flex justify-center items-center sm:w-full">
-                <button className="bg-red-500 rounded-md w-[50%] h-full text-white font-mono font-semibold flex justify-center items-center hover:bg-red-600">Log in</button>
+                <button className="bg-[#9834c7] rounded-md w-[50%] h-full text-white font-mono font-semibold flex justify-center items-center hover:bg-[#9834c7be]">Log in</button>
             </div>
         </div>
     </div>

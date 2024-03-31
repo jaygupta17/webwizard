@@ -7,7 +7,7 @@ import bottomBg from "../public/bottom_bg.svg";
 
 export default function Footer() {
     return (
-      <div className="flex h-60 bg-cover bg-center mt-[8%]" style={{ backgroundImage: `url(${bottomBg})` }}>
+      <div className="flex h-[30vh] justify-center items-center bg-cover bg-center mt-[8%]" style={{ backgroundImage: `url(${bottomBg})` }}>
         <div className="ml-40 w-130 ">
           <h2 className="text-[25px] text-white mt-8">Need Help?</h2>
           <div className="w-[55%] text-white">örem psum mer ultrask hyposk, miska än tranerade. Diling monohönera pora bebinera, pack. Dinat teling. Berån pott. Benade pres yn. Sor kvasikilig i trav. Lan kvasilögisk</div>
