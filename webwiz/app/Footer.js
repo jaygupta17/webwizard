@@ -3,13 +3,12 @@ import linkedin from "../public/linkedin.svg";
 import github from "../public/gtihub.svg";
 import twitter from "../public/twitter.svg";
 import insta from "../public/insta.svg";
-import bottomBg from "../public/bottomBg.png";
 
 export default function Footer() {
   return (
     <div
-      className="flex h-[40vh] justify-center items-center bg-cover bg-center"
-      style={{ backgroundImage: `url(${bottomBg})` }}
+      className="flex h-[40vh] w-full justify-center items-center bg-cover bg-center"
+      style={{ backgroundImage: `url('/bottomBg.png')` }}
     >
       <div className="ml-40 w-130 ">
         <h2 className="text-[25px] text-white mt-8">Need Help?</h2>

@@ -37,13 +37,13 @@ function Contact(){
          <div className =' h-[30vh] w-[55%] flex justify-evenly items-center'>
             <div className="bg-purple-400 rounded-md mx-10 h-[30vh] aspect-square flex flex-col justify-center items-center">
               <div className="py-2 text-base font-semibold">
-                Krishna Vijaywargia
+                Om Chillure
               </div>
               <div className="py-2 hover:drop-shadow-[0_0_5px_#29043b] ">
-                <a href="">LinkedIn</a> 
+                <a href="https://www.linkedin/in/omchillure" target="_blank">LinkedIn</a> 
               </div>
               <div className="py-2 hover:drop-shadow-[0_0_5px_#29043b] ">
-                <a href="">Github</a>
+                <a href="" target="_blank">Github</a>
               </div>
             </div>
             <div className="bg-purple-400 rounded-md mx-10 h-[30vh] aspect-square flex flex-col justify-center items-center">
@@ -51,21 +51,21 @@ function Contact(){
                 Krishna Vijaywargia
               </div>
               <div className="py-2 hover:drop-shadow-[0_0_5px_#29043b] ">
-                <a href="https://www.linkedin.com/in/krishna-vijaywargia-404895201">LinkedIn</a> 
+                <a href="https://www.linkedin.com/in/krishna-vijaywargia-404895201" target="_blank">LinkedIn</a> 
               </div>
               <div className="py-2 hover:drop-shadow-[0_0_5px_#29043b] ">
-                <a href="https://github.com/KrishnaV2">Github</a>
+                <a href="https://github.com/KrishnaV2" target="_blank">Github</a>
               </div>
             </div>
             <div className="bg-purple-400 mx-10 rounded-md h-[30vh] aspect-square flex flex-col justify-center items-center">
               <div className="py-2 text-base font-semibold">
-                Krishna Vijaywargia
+                Jay Gupta
               </div>
               <div className="py-2 hover:drop-shadow-[0_0_5px_#29043b] ">
-                <a href="">LinkedIn</a> 
+                <a href="https://www.linkedin/in/jaygupta17" target="_blank">LinkedIn</a> 
               </div>
               <div className="py-2 hover:drop-shadow-[0_0_5px_#29043b] ">
-                <a href="">Github</a>
+                <a href="https://www.github.com/jaygupta17" target="_blank">Github</a>
               </div>
             </div>
          </div>

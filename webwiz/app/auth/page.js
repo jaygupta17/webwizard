@@ -1,6 +1,25 @@
-import React from "react";
-
+"use client"
+import React, { useState } from "react";
+import {ID , account} from '../appwrite/auth'
 function Form() {
+
+  const [email , setEmail] = useState('');
+  const [uname , setUname] = useState('');
+  const [passw , setPassw] = useState('');
+
+  const login = async (e) => {
+    e.preventDefault()
+    const session = await account.createEmailSession(email, passw);
+  };
+
+  const register = async (e) => {
+    e.preventDefault()
+    const user = await account.create(ID.unique(), email, passw, uname);
+    user.then((res)=>console.log(res))
+
+    // login(email, passw);
+  };
+
   return (
     <div className="h-[90vh] w-full flex justify-center items-center">
       <form className="h-[55vh] w-[30%] flex gap-y-6 justify-center items-center flex-col bg-white/5">
@@ -10,23 +29,26 @@ function Form() {
             type="text"
             placeholder="Name"
             className="rounded-sm py-2 px-2 w-[70%] bg-black/30 text-white/90 outline-none focus:border-purple-400 focus:border-2"
+            onChange={(e)=>setUname(e.target.value)}
           />
           <input
             type="email"
             placeholder="Email"
             className="rounded-sm py-2 px-2 w-[70%] bg-black/30  text-white/90 outline-none focus:border-purple-400 focus:border-2"
+            onChange={(e)=>setEmail(e.target.value)}
           />
           <input
             type="password"
             placeholder="Password"
             className="rounded-sm py-2 px-2 w-[70%] bg-black/30  text-white/90 outline-none focus:border-purple-400 focus:border-2"
+            onChange={(e)=>setPassw(e.target.value)}
           />
         </div>
         <div className="w-[70%] flex gap-x-2">
-          <button className="bg-[#9834c7] py-2 rounded-md w-[50%] h-full text-white font-mono font-semibold flex justify-center items-center hover:bg-[#9834c7be]">
+          <button className="bg-[#9834c7] py-2 rounded-md w-[50%] h-full text-white font-mono font-semibold flex justify-center items-center hover:bg-[#9834c7be]" onSubmit={(e)=>register(e)}>
             Sign Up
           </button>
-          <button className="bg-[#9834c730] rounded-md w-[50%] h-full text-white font-mono font-semibold flex justify-center items-center hover:bg-[#9834c761]">
+          <button className="bg-[#9834c730] rounded-md w-[50%] h-full text-white font-mono font-semibold flex justify-center items-center hover:bg-[#9834c761]" onSubmit={(e)=>login(e)}>
             Sign In
           </button>
         </div>
