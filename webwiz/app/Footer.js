@@ -7,7 +7,7 @@ import insta from "../public/insta.svg";
 export default function Footer() {
   return (
     <div
-      className="flex h-[40vh] w-full justify-center items-center bg-cover bg-center"
+      className="flex h-[40vh] w-full justify-center items-center bg-cover bg-center mt-[5%]"
       style={{ backgroundImage: `url('/bottomBg.png')` }}
     >
       <div className="ml-40 w-130 ">

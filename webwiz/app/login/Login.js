@@ -1,18 +1,28 @@
-import React from 'react'
+import React from "react";
+import { MaskContainer } from "../components/MaskContainer"; 
 
-function Login() {
+function MyComponent() {
+  const textColor = "red";
+
   return (
-    <div className='h-[88vh] w-full flex justify-center items-center'>
-      <div className='w-[98%] h-[97%] flex justify-center items-center rounded-md'>
-        <div className='h-full w-1/2 bg-white/15'>
-
-        </div>
-        <div className='h-full w-1/2 bg-white/15'>
-          
-        </div>
-      </div>
-    </div>
-  )
+    // <div
+    //   className="bg-cover bg-center"
+    //   style={{ backgroundImage: `url('../public/grimore.jpg')` }}
+    // >
+      <MaskContainer
+        children={
+          <>
+            Welcome To{" "}
+            <span style={{ color: textColor }}>5 Leaf</span>
+            {" "}Grimoire Project
+          </>
+        }
+        revealText="The Grimoire Project"
+      />
+    // </div>
+  );
 }
 
-export default Login
+export default MyComponent;
+
+
