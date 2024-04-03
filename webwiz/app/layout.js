@@ -3,7 +3,7 @@ import "./globals.css";
 import Header from "./Header";
 import Footer from "./Footer";
 import NextTopLoader from 'nextjs-toploader';
-
+import MyComponent from './login/Login'
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -12,12 +12,13 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  let isLogin = false;
   return (
     <html lang="en">
       <body className={inter.className}>
         <Header />
         <NextTopLoader />
-        {children}
+        {isLogin? <MyComponent/> :children}
         <Footer />
       </body>
     </html>
