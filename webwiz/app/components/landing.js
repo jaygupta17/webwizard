@@ -4,7 +4,7 @@ const landing = () => {
     <>
       <div className="w-full h-[85vh] flex justify-center items-center flex-col">
         <div
-          className="w-[98%] h-[100%] rounded-[20px] relative overflow-hidden"
+          className="w-[100%] h-[100%] rounded-[20px] relative overflow-hidden"
           style={{ zIndex: "2" }}
         >
           <img
