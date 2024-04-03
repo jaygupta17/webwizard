@@ -34,7 +34,7 @@ function Contact(){
      </div>
      <div className='h-[40vh] w-[98%] flex justify-evenly items-center flex-col'>
          <h1 className='text-white/70 font-semibold text-1xl my-2'></h1>
-         <div className =' h-[30vh] w-[55%] flex justify-evenly items-center'>
+         <div className =' h-[30vh] w-[55%] flex justify-evenly items-center  max-[700px]:flex-col  max-[700px]:gap-y-1'>
             <div className="bg-purple-400 rounded-md mx-10 h-[30vh] aspect-square flex flex-col justify-center items-center">
               <div className="py-2 text-base font-semibold">
                 Om Chillure
