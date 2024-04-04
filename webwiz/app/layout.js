@@ -4,6 +4,9 @@ import Header from "./Header";
 import Footer from "./Footer";
 import NextTopLoader from 'nextjs-toploader';
 import MyComponent from './login/Login'
+import { ClerkProvider } from "@clerk/nextjs";
+import {useUser } from "@clerk/nextjs";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -13,14 +16,17 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   let isLogin = false;
+  
   return (
-    <html lang="en">
+   <ClerkProvider>
+     <html lang="en">
       <body className={inter.className}>
         <Header />
         <NextTopLoader />
-        {isLogin? <MyComponent/> :children}
+        {isLogin?children : <MyComponent/>}
         <Footer />
       </body>
     </html>
+   </ClerkProvider>
   );
 }
