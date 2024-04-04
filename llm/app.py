@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request ,jsonify 
+from flask_cors import CORS , cross_origin
 from langchain_community.llms import HuggingFaceHub
 from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
@@ -7,6 +8,8 @@ import os
 os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
 
 app = Flask(__name__)
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 template = """Question: {question}
 
@@ -24,10 +27,24 @@ llm_chain = LLMChain(prompt=prompt, llm=llm)
 def home():
     return render_template('index.html')
 
+# @app.route('/api/ping')
+# def json():
+#     data = {'name': 'Harshit'}
+#     return jsonify(data)
+
 # Define route for chatbot response
-@app.route('/get-response', methods=['POST'])
+# @app.route('/get-response', methods=['POST'])
+# def get_response():
+#     print(request.form)
+#     user_input = request.form['user_input']
+#     response = llm_chain.run(user_input)
+#     return response
+
+@app.route('/get-response')
+@cross_origin()
 def get_response():
-    user_input = request.form['user_input']
+    print(request.form)
+    user_input = request.args.get('user_input')
     response = llm_chain.run(user_input)
     return response
 
