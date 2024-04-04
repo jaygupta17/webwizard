@@ -27,19 +27,6 @@ llm_chain = LLMChain(prompt=prompt, llm=llm)
 def home():
     return render_template('index.html')
 
-# @app.route('/api/ping')
-# def json():
-#     data = {'name': 'Harshit'}
-#     return jsonify(data)
-
-# Define route for chatbot response
-# @app.route('/get-response', methods=['POST'])
-# def get_response():
-#     print(request.form)
-#     user_input = request.form['user_input']
-#     response = llm_chain.run(user_input)
-#     return response
-
 @app.route('/get-response')
 @cross_origin()
 def get_response():
