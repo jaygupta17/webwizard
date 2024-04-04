@@ -18,7 +18,7 @@ const landing = () => {
               zIndex: "-3",
             }}
           />
-          <div className="h-full w-full bg-gradient-to-b from-transparent from-[25%] via-black/50 via-[45%] to-black/60">
+          <div className="h-[100%] w-[100%] bg-gradient-to-b from-transparent from-[25%] via-black/50 via-[45%] to-black/60 ">
             <div>
               <div
                 className="text-[110px] font-bold sans-serif flex justify-center align-center mt-[10%] font-[Irish Grover, system-ui]"

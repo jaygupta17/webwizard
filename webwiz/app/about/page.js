@@ -31,7 +31,7 @@ function About() {
           Team Members
         </h1>
         {team.map((member) => (
-          <div className="rounded-[15px] h-[40vh] w-[55%] bg-black/25 border-[1px] border-purple-500/10 flex justify-center items-center text-white gap-x-14 max-[700px]:flex-col max-[700px]:h-70vh">
+          <div className="rounded-[15px] h-[40vh] w-[55%] bg-black/25 border-[1px] border-purple-500/10 flex justify-center items-center text-white gap-x-14 max-[700px]:flex-col max-[700px]:h-70vh max-[700px]:w-[70%]">
             <div className="h-[90%] aspect-square rounded-[50%] bg-purple-700 flex justify-center items-center">
               Image
             </div>
@@ -45,7 +45,7 @@ function About() {
                   </div>
                 ))}
               </h1>
-              <div className='flex gap-x-3'>
+              <div className='flex gap-x-3 justify-center items-center w-full'>
                   <a href='' target='_blank'>LinkedIn</a>
                   <a href='' target='_blank'>Github</a>
               </div>

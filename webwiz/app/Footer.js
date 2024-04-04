@@ -7,12 +7,12 @@ import insta from "../public/insta.svg";
 export default function Footer() {
   return (
     <div
-      className="flex h-[40vh] w-full justify-center items-center bg-cover bg-center mt-[5%]"
+      className="flex h-[40vh] max-[700px]:h-[60vh] max-[700px]:flex-col w-full justify-center items-center bg-cover bg-center mt-[5%]"
       style={{ backgroundImage: `url('/bottomBg.png')` }}
     >
-      <div className="ml-40 w-130 ">
-        <h2 className="text-[25px] text-white mt-8">Need Help?</h2>
-        <div className="w-[55%] text-white">
+      <div className="ml-40 w-[60%] max-[700px]:flex max-[700px]:justify-center max-[700px]:items-center">
+        <h2 className="text-[25px] text-white mt-8 max-[700px]:hidden">Need Help?</h2>
+        <div className="w-[55%] text-white max-[700px]:hidden">
           örem psum mer ultrask hyposk, miska än tranerade. Diling monohönera
           pora bebinera, pack. Dinat teling. Berån pott. Benade pres yn. Sor
           kvasikilig i trav. Lan kvasilögisk
@@ -25,7 +25,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="mr-[14%]">
-        <div className="w-[35%] text-white text-[20px] flex items-center sm:text-2 gap-x-10 mt-3">
+        <div className="w-[35%] text-white text-[20px] max-[700px]:flex-col  flex items-center sm:text-2 gap-x-10 mt-3">
           <div className="font-semibold relative w-fit block">
             About
               <ul className="text-[18px] font-extralight">

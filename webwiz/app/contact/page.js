@@ -2,11 +2,11 @@ import React from "react";
 
 function Contact(){ 
     return(
-    <div className='w-full flex justify-center items-center flex-col'>
+    <div className='w-full flex justify-center items-center flex-col max-[700px]:h-[110vh]'>
      <div>
-        <h1 className="text-white/70 font-semibold text-5xl py-9 justify-center px-20">Get In Touch</h1>
+        <h1 className="text-white/70 font-semibold text-3xl py-9 justify-center px-20">Get In Touch</h1>
         <div>
-            <form>
+            <form className="">
                 <div className="flex flex-wrap">
                     <div className="px-3">
                         <label className="block py-1 text-white/70" htmlFor="fname">First Name</label>
