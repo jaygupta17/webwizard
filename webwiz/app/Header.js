@@ -20,12 +20,12 @@ function Header() {
             <Link href="/contact">Contact</Link>
           </li>
           <li className="font-semibold relative w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-purple-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center hover:drop-shadow-[0_0_4px_#9834c7]">
-            <Link href="/support">Wiz brewery</Link>
+            <Link href="/">Wiz brewery</Link>
           </li>
         </ul>
         <div className="md:w-[15%] h-[50%] flex justify-center items-center sm:w-full">
           <button className="bg-[#9834c7] rounded-md w-[50%] h-full text-white font-mono font-semibold flex justify-center items-center hover:bg-[#9834c7be]">
-            <Link href="/auth">Register</Link>
+            <Link href="/support">Chatbot</Link>
           </button>
         </div>
       </div>
