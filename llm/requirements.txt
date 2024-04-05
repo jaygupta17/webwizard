@@ -28,6 +28,7 @@ executing==2.0.1
 fastapi==0.109.2
 filelock==3.13.1
 Flask==3.0.2
+Flask-Cors==4.0.0
 flatbuffers==23.5.26
 frozenlist==1.4.1
 fsspec==2023.12.2
