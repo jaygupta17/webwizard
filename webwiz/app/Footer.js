@@ -7,25 +7,26 @@ import insta from "../public/insta.svg";
 export default function Footer() {
   return (
     <div
-      className="flex md:h-[40vh] h-[70vh] max-[700px]:flex-col w-full justify-center items-center bg-cover bg-center mt-[5%]"
+      className="flex h-[40vh] max-[700px]:h-[20vh] max-[700px]:flex-col w-full justify-center items-center bg-cover bg-center mt-[5%] "
       style={{ backgroundImage: `url('/bottomBg.png')` }}
     >
-      <div className="ml-40 w-[60%] max-[700px]:flex max-[700px]:justify-center max-[700px]:items-center">
+      <h1 className="text-white hidden max-[700px]:flex">{String.fromCodePoint(0x00A9)+" "}Copyright 2024 Techtitans </h1>
+      <div className="ml-40 w-[60%] max-[700px]:hidden max-[700px]:flex max-[700px]:justify-center max-[700px]:items-center">
         <h2 className="text-[25px] text-white mt-8 max-[700px]:hidden">Need Help?</h2>
         <div className="w-[55%] text-white max-[700px]:hidden">
           örem psum mer ultrask hyposk, miska än tranerade. Diling monohönera
           pora bebinera, pack. Dinat teling. Berån pott. Benade pres yn. Sor
           kvasikilig i trav. Lan kvasilögisk
         </div>
-        <div className="mt-3 flex gap-3.5">
+        <div className="mt-3 max-[700px]:w-full max-[700px]:justify-center max-[700px]:align-center flex gap-3.5">
           <Image src={linkedin} alt="insta_logo" height={30} width={30} />
           <Image src={github} alt="insta_logo" height={30} width={30} />
           <Image src={twitter} alt="insta_logo" height={30} width={30} />
           <Image src={insta} alt="insta_logo" height={30} width={30} />
         </div>
       </div>
-      <div className="mr-[14%]">
-        <div className="w-[35%] text-white text-[20px] max-[700px]:flex-col  flex items-center sm:text-2 gap-x-10 mt-3">
+      <div className="mr-[14%] max-[700px]:hidden">
+        <div className="w-[35%] text-white text-[20px] max-[700px]:flex-col  flex items-center sm:text-2 gap-x-10 mt-3 max-[700px]:hidden">
           <div className="font-semibold relative w-fit block">
             About
               <ul className="text-[18px] font-extralight">
@@ -57,3 +58,4 @@ export default function Footer() {
     </div>
   );
 }
+

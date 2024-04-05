@@ -4,10 +4,10 @@ function Contact(){
     return(
     <div className='md:w-full flex justify-center items-center md:h-[90vh]  flex-col h-[140vh]'>
      <div>
-        <h1 className="text-white/70 font-semibold text-3xl py-9 justify-center px-20">Get In Touch</h1>
+        <h1 className="text-white/70 font-semibold flex justify-center items-center text-3xl py-9 justify-center px-20">Get In Touch</h1>
         <div>
             <form className="">
-                <div className="flex flex-wrap">
+                <div className="flex flex-wrap flex justify-center items-center">
                     <div className="px-3">
                         <label className="block py-1 text-white/70" htmlFor="fname">First Name</label>
                         <input className="block rounded-sm py-2 bg-black/30  text-white/90 outline-none focus:border-purple-400 focus:border-2" type="text" name="first" required />
@@ -32,10 +32,10 @@ function Contact(){
             </form>
         </div>
      </div>
-     <div className='h-[100vh] w-[98%] flex justify-evenly items-center flex-col'>
+     <div className='h-[90vh] w-[98%] flex justify-evenly items-center flex-col'>
          <h1 className='text-white/70 font-semibold text-1xl my-2'></h1>
-         <div className =' h-[30vh] w-[55%] flex justify-evenly items-center  max-[700px]:flex-col  max-[700px]:gap-y-1'>
-            <div className="bg-purple-400 rounded-md mx-10 h-[30vh] aspect-square flex flex-col justify-center items-center">
+         <div className =' md:h-[25vh] h-[85vh] w-[55%] flex justify-evenly items-center  max-[700px]:flex-col  max-[700px]:gap-y-1'>
+            <div className="bg-purple-400 rounded-md mx-10 h-[18vh] aspect-square flex flex-col justify-center items-center">
               <div className="py-2 text-base font-semibold">
                 Om Chillure
               </div>
@@ -46,7 +46,7 @@ function Contact(){
                 <a href="" target="_blank">Github</a>
               </div>
             </div>
-            <div className="bg-purple-400 rounded-md mx-10 h-[30vh] aspect-square flex flex-col justify-center items-center">
+            <div className="bg-purple-400 rounded-md mx-10  aspect-square flex flex-col justify-center items-center h-[18vh]">
               <div className="py-2 text-base font-semibold">
                 Krishna Vijaywargia
               </div>
@@ -57,7 +57,7 @@ function Contact(){
                 <a href="https://github.com/KrishnaV2" target="_blank">Github</a>
               </div>
             </div>
-            <div className="bg-purple-400 mx-10 rounded-md h-[30vh] aspect-square flex flex-col justify-center items-center">
+            <div className="bg-purple-400 mx-10 rounded-md h-[30vh] aspect-square flex flex-col justify-center items-center h-[18vh]">
               <div className="py-2 text-base font-semibold">
                 Jay Gupta
               </div>
