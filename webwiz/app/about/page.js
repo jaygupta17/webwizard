@@ -59,7 +59,7 @@ function About() {
         </h1>
         <div className=" h-[30vh] w-[55%] flex justify-evenly items-center  max-[700px]:flex-col  max-[700px]:gap-y-2">
           {stack.map((ele) => (
-            <div className="bg-purple-400 h-[30vh] aspect-square flex justify-center items-center">
+            <div className="bg-purple-900 h-[20vh] text-white aspect-square flex justify-center items-center">
               {ele}
             </div>
           ))}
