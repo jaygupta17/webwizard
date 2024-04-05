@@ -15,15 +15,13 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  let isLogin = false;
-  
   return (
    <ClerkProvider>
      <html lang="en">
       <body className={inter.className}>
         <Header />
         <NextTopLoader />
-        {isLogin?children : <MyComponent/>}
+        {children}
         <Footer />
       </body>
     </html>
