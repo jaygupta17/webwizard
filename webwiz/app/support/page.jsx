@@ -7,7 +7,7 @@ const page = () => {
   const [response, setResponse] = useState('')
 
   const callLLm = async () => {
-    const response = await fetch(`https://flaskapp-gik3.onrender.com?user_input=${data}`)
+    const response = await fetch(`https://flaskapp-gik3.onrender.com=${data}`)
     .then(response => response.text())
     .then(data => setResponse(data))
 
