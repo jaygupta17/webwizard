@@ -15,8 +15,8 @@ function Header() {
 
   return (
     <div className="md:h-[13vh] h-[20vh] w-full flex justify-center items-center">
-      <div className="bg-white/10 md:h-[10vh] w-[98%] rounded-[20px] flex justify-center items-center min-[200px]:h-[20vh] min-[200px]:flex-row min-[700px]:flex-row relative">
-        <div className="rounded-md">
+      <div className="bg-white/10 md:h-[10vh] w-[98%] rounded-[20px] flex justify-between items-center min-[200px]:h-[20vh] min-[200px]:flex-row min-[700px]:flex-row relative">
+        <div className="rounded-md ml-4">
           <Image src={logo} alt="logo" width={65} height={65} />
         </div>
         <button
@@ -25,7 +25,7 @@ function Header() {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="h-9 w-9"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
