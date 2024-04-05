@@ -18,14 +18,16 @@ useEffect(() => {
 callLLm()
 }, [])
   return (
-    <div className='h-[80%]'>
-    <div className='flex  justify-center items-center h-[50%] ml-[3%]'>
-      <input className="h-[10%] w-[51.5%] " type="text" value={data} onChange={e => setData(e.target.value)} />
-      <button className="w-[8%] h-[12%] rounded-md bg-cyan-500 shadow-lg shadow-indigo-500/40 p-1 ml-6" onClick={callLLm}>Generate</button>
+    <div className='md:h-[90vh] h-[80vh] w-full flex justify-center items-center '>
+      <div className='w-[70%] h-[98%] flex justify-center items-center flex-col'>
+      <div className='flex justify-center gap-x-2 items-center h-[7vh] w-[70%]'>
+        <input className="h-[100%] w-[60%] " type="text" value={data} onChange={e => setData(e.target.value)} />
+        <button className="w-[30%] h-[100%%] rounded-md bg-cyan-500 shadow-lg shadow-indigo-500/40 p-1 ml-6" onClick={callLLm}>Generate</button>
       </div>
-      <div className='bg-[#9834c7] flex justify-center items-center h-[60%] w-[50%] mt-[-5%] ml-[22%] rounded-md'>
-      <div className=''>
+      <div className='flex justify-center items-center bg-white/10 h-[50vh] w-[70%]'>
+       <div className=''>
         {response}
+        </div>
       </div>
       </div>
     </div>

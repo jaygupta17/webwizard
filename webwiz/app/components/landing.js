@@ -2,7 +2,7 @@ import React from "react";
 const landing = () => {
   return (
     <>
-      <div className="w-full h-[85vh] flex justify-center items-center flex-col">
+      <div className="w-full h-[85vh] min-[600px]:h-[100vh] flex justify-center items-center flex-col">
         <div
           className="w-[100%] h-[100%] rounded-[20px] relative overflow-hidden"
           style={{ zIndex: "2" }}
@@ -21,7 +21,7 @@ const landing = () => {
           <div className="h-[100%] w-[100%] bg-gradient-to-b from-transparent from-[25%] via-black/50 via-[45%] to-black/60 ">
             <div>
               <div
-                className="text-[110px] font-bold sans-serif flex justify-center align-center mt-[10%] font-[Irish Grover, system-ui]"
+                className="text-[10vh] font-bold sans-serif flex justify-center align-center mt-[10%] font-[Irish Grover, system-ui]"
                 style={{ color: "#F9FB6B" }}
               >
                 Web Wizard

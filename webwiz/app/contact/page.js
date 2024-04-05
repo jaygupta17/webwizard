@@ -2,7 +2,7 @@ import React from "react";
 
 function Contact(){ 
     return(
-    <div className='w-full flex justify-center items-center flex-col max-[700px]:h-[110vh]'>
+    <div className='md:w-full flex justify-center items-center md:h-[90vh]  flex-col h-[140vh]'>
      <div>
         <h1 className="text-white/70 font-semibold text-3xl py-9 justify-center px-20">Get In Touch</h1>
         <div>
@@ -32,7 +32,7 @@ function Contact(){
             </form>
         </div>
      </div>
-     <div className='h-[40vh] w-[98%] flex justify-evenly items-center flex-col'>
+     <div className='h-[100vh] w-[98%] flex justify-evenly items-center flex-col'>
          <h1 className='text-white/70 font-semibold text-1xl my-2'></h1>
          <div className =' h-[30vh] w-[55%] flex justify-evenly items-center  max-[700px]:flex-col  max-[700px]:gap-y-1'>
             <div className="bg-purple-400 rounded-md mx-10 h-[30vh] aspect-square flex flex-col justify-center items-center">

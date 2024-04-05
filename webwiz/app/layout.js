@@ -3,9 +3,7 @@ import "./globals.css";
 import Header from "./Header";
 import Footer from "./Footer";
 import NextTopLoader from 'nextjs-toploader';
-import MyComponent from './login/Login'
 import { ClerkProvider } from "@clerk/nextjs";
-import {useUser } from "@clerk/nextjs";
 
 const inter = Inter({ subsets: ["latin"] });
 
