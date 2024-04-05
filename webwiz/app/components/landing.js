@@ -18,15 +18,15 @@ const landing = () => {
               zIndex: "-3",
             }}
           />
-          <div className="h-[100%] w-[100%] bg-gradient-to-b from-transparent from-[25%] via-black/50 via-[45%] to-black/60 ">
-            <div>
+          <div className="h-[100%] w-[100%] bg-gradient-to-b from-transparent from-[25%] via-black/50 via-[45%] to-black/60 flex justify-center items-center flex-col">
+            <div className="lex justify-center items-center flex-col">
               <div
-                className="text-[10vh] font-bold sans-serif flex justify-center align-center mt-[10%] font-[Irish Grover, system-ui]"
+                className="text-[10vh]  font-bold sans-serif flex justify-center items-center font-[Irish Grover, system-ui] text-justify"
                 style={{ color: "#F9FB6B" }}
               >
                 Web Wizard
               </div>
-              <div className="text-xl text-white w-1/2 mx-auto">
+              <div className="text-xl text-white w-1/2 mx-auto flex justify-center align-center">
                 Lörem ipsum mer ultrask hyposk, miska än tranerade. Diling
                 monohönera pora bebinera, pack. Prelig ode, monogt serar.
                 Hoholedes{" "}
