@@ -1,6 +1,7 @@
 import Link from "next/link";
 import logo from "../public/logo.png";
 import Image from "next/image";
+import bot from "../public/bot.png";
 
 function Header() {
   return (
@@ -23,9 +24,12 @@ function Header() {
             <Link href="/">Wiz brewery</Link>
           </li>
         </ul>
-        <div className="md:w-[15%] h-[50%] flex justify-center items-center sm:w-full">
+        <div className="md:w-[15%] h-[50%] flex justify-center items-center sm:w-full gap-2">
+          <Link href="/support">
+              <Image src={bot} alt="bot" width={50} height={50} />
+          </Link>
           <button className="bg-[#9834c7] rounded-md w-[50%] h-full text-white font-mono font-semibold flex justify-center items-center hover:bg-[#9834c7be]">
-            <Link href="/support">Chatbot</Link>
+            <Link href="/login">Sing Up/In</Link>
           </button>
         </div>
       </div>
