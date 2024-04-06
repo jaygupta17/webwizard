@@ -6,21 +6,23 @@ function About() {
       name: "Jay Gupta",
       branch: "Data Science",
       skills: ["NextJs", "Tailwind CSS", "Appwrite", "Figma"],
-      socials : [{LinkedIn : ''} , {Github : ''}],
+      LinkedIn : "https://www.linkedin.com/in/jaygupta17",
+      github:"https://www.github.com/jaygupta17",
 
     },
     {
       name: "Krishna Vijaywargiy",
       branch: "Data Science",
       skills: ["NextJs", "Tailwind CSS","Figma" , "Java"],
-      socials : [{LinkedIn : ''} , {Github : ''}],
+      LinkedIn : "https://www.linkedin.com/in/krishna-vijaywargia-404895201",
+      github:"https://github.com/KrishnaV2",
     },
     {
       name: "Om Chillure",
       branch: "ENCS",
       skills: [ "ML", "Gen AI" ,"NextJs", "Tailwind CSS"],
-      socials : [{LinkedIn : ''} , {Github : ''}],
-
+      LinkedIn : "https://www.linkedin.com/in/omChillure",
+      github:"https://github.com/omchillure",
     },
   ];
   const stack = ["Next.js", "Appwrite", "Python"];
@@ -46,8 +48,8 @@ function About() {
                 ))}
               </h1>
               <div className='flex gap-x-3 justify-center items-center w-full'>
-                  <a href='' target='_blank'>LinkedIn</a>
-                  <a href='' target='_blank'>Github</a>
+                  <a href={member.LinkedIn} target='_blank'>LinkedIn</a>
+                  <a href={member.github} target='_blank'>Github</a>
               </div>
             </div>
           </div>

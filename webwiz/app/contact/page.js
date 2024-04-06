@@ -40,13 +40,13 @@ function Contact(){
                 Om Chillure
               </div>
               <div className="py-2 hover:drop-shadow-[0_0_5px_#29043b] ">
-                <a href="https://www.linkedin/in/omchillure" target="_blank">LinkedIn</a> 
+                <a href="https://www.linkedin.com/in/omChillure" target="_blank">LinkedIn</a> 
               </div>
               <div className="py-2 hover:drop-shadow-[0_0_5px_#29043b] ">
-                <a href="" target="_blank">Github</a>
+                <a href="https://github.com/omchillure" target="_blank">Github</a>
               </div>
             </div>
-            <div className="bg-purple-400 rounded-md mx-10  aspect-square flex flex-col justify-center items-center h-[18vh]">
+            <div className="bg-purple-400 rounded-md mx-10 h-[18vh] aspect-square flex flex-col justify-center items-center">
               <div className="py-2 text-base font-semibold">
                 Krishna Vijaywargia
               </div>
@@ -57,12 +57,12 @@ function Contact(){
                 <a href="https://github.com/KrishnaV2" target="_blank">Github</a>
               </div>
             </div>
-            <div className="bg-purple-400 mx-10 rounded-md h-[30vh] aspect-square flex flex-col justify-center items-center h-[18vh]">
+            <div className="bg-purple-400 rounded-md mx-10 h-[18vh] aspect-square flex flex-col justify-center items-center">
               <div className="py-2 text-base font-semibold">
                 Jay Gupta
               </div>
               <div className="py-2 hover:drop-shadow-[0_0_5px_#29043b] ">
-                <a href="https://www.linkedin/in/jaygupta17" target="_blank">LinkedIn</a> 
+                <a href="https://www.linkedin.com/in/jaygupta17" target="_blank">LinkedIn</a> 
               </div>
               <div className="py-2 hover:drop-shadow-[0_0_5px_#29043b] ">
                 <a href="https://www.github.com/jaygupta17" target="_blank">Github</a>
