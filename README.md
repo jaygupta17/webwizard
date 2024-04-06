@@ -1,8 +1,8 @@
-##This is a complete full stack project which include a LLM for generating text [chatbot].
+# This is a complete full stack project which includes a LLM for generating text [chatbot] , an authntication page and 3D vectors.
 
-***Tech Stack Used in this project is : Next.js , FLask , Clerk for authentication , Spline Tool
+**Tech Stack Used in this project is : Next.js , FLask , Clerk for authentication , Spline Tool **
 
-**How To Use Our Web App
+**How To Use Our Web App**
 <br />
 1] Clone The Repo:
 ```
