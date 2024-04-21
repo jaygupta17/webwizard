@@ -56,11 +56,7 @@
                 var userInput = $("#user-input").val();
                 $("#chat-box").append('<div class="user-message">You: ' + userInput + '</div>');
                 $("#user-input").val('');
-                $.ajax({
-                    url: '/get-response',
-                    type: 'POST',
-                    data: {user_input: userInput},
-                    success: function(response){
+                $.get(`/get-response?user_input=${userInput}`, function(response){
                         $("#chat-box").append('<div class="bot-message">Bot: ' + response + '</div>');
                     }
                 });
